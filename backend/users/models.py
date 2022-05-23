@@ -24,25 +24,33 @@ class User(AbstractUser):
         max_length=255,
     )
     firstname = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     lastname = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     useremail = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     dob = models.DateField(
         null=True,
         blank=True,
     )
     sign_on_date = models.DateField(
+        null=True,
+        blank=True,
+    )
+    company = models.TextField(
+        null=True,
+        blank=True,
+    )
+    company_email = models.TextField(
         null=True,
         blank=True,
     )
